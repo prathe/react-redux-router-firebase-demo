@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Link } from "react-router-dom";
-import { Navbar } from "react-bootstrap";
 import Routes from "./Routes";
+import { Link } from "react-router-dom";
+import { Navbar, Nav, NavItem } from "react-bootstrap";
 
 class App extends Component {
   render() {
@@ -15,6 +15,12 @@ class App extends Component {
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
+          <Navbar.Collapse>
+            <Nav pullRight>
+              <NavItem href="/signup">Signup</NavItem>
+              <NavItem href="/login">Login</NavItem>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
         <Routes />
       </div>
