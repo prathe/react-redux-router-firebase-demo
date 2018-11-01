@@ -1,5 +1,5 @@
 {
-  "name": "routes",
+  "name": "react-redux-routes-shell",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
